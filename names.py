@@ -18,11 +18,11 @@ users = {
  }
 
 
-def loop_through_students(students):
+def loop_through_students():
   for student in students:
     print(student['first_name'], student['last_name'])
 
-def show_all_users(users):
+def show_all_users():
   for role in users:
     counter = 0
     print(role)
@@ -32,6 +32,6 @@ def show_all_users(users):
       last_name = person['last_name'].upper()
       length = len(first_name) + len(last_name)
       print("{} - {} {} - {}".format(counter, first_name, last_name, length))
-loop_through_students(students)
-show_all_users(users)
+loop_through_students()
+show_all_users()
 
